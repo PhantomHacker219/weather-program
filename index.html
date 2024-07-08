@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title >Weather App</title>
+</head>
+<body>
+    <div class="weather_container">
+        <div class="weather_time">
+            <h2 id="country"></h2>
+            <p id="time"></p> 
+            <i class="fa-solid fa-location-dot"></i>
+            <span id="address"></span>
+        </div>
+
+        <div class="weather_gradus">
+            <img id="icon" src="" alt="">
+            <h2 id="condition"></h2>
+            <h2 id="temp" style="white-space: nowrap;"></h2>
+        </div>
+    </div>
+
+    <div class="weather_data">
+        <div class="weather_box">
+            <div class="box">
+                <p>PRESSURE  </p>
+                <p id="pressure"></p>
+            </div> 
+            <div class="box">
+                <p>HUMIDITY  </p>
+                <p id="humidity"></p> 
+            </div>
+            <div class="box">
+                <p>WIND  </p>
+                <p id="wind"></p>
+            </div>
+        </div>
+
+        <div class="weather_list">
+            <div class="tue">
+                <img id="today" src="" alt=""> <br>
+                <p id="kunlar">Today</p>
+                <p id="first_temp">30 °C</p>
+            </div>
+            <div class="tue">
+                <img id="tomorrow" src="" alt=""> <br>
+                <p id="kunlar">Tomorrow</p>
+                <p id="second_temp">22 °C</p>
+            </div>
+            <div class="tue">
+                <img id="overmorrow" src="" alt=""><br>
+                <p id="kunlar">Over-row</p>
+                <p id="third_temp">06 °C</p>
+            </div>
+        </div>
+
+        <div class="search_area">
+            <button id="change_btn">Change location <i class="fas fa-location-dot"></i></button>
+            <form id="form" action="#">
+                <input id="inp" type="text" placeholder="Search country">
+                <button id="back_btn"><i class="fa-solid fa-right-long"></i></button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>

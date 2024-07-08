@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+:root {
+    --light: #72edf2;
+    --dark: #5151e5;
+  }
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(12, 11, 34);
+}
+
+.weather_container {
+    width: 450px;
+    height: 500px;
+    background-blend-mode: multiply;
+    background-image: url(https://www.tapeciarnia.pl/fotki/d/32813_1592122909_4777.jpg);
+    background-color: #2228317a;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: transform 300ms ease;
+    transform: translateZ(0) scale(1.02) perspective(1000px);
+    cursor: pointer;
+}
+
+.weather_container:hover {
+    transform: scale(1.1) perspective(1500px) rotateY(10deg);
+}
+
+.weather_time {
+    width: 400px;
+    margin: 30px;
+    color: white;
+}
+
+.weather_time h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.weather_time p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.weather_time i {
+    font-size: 22px;
+}
+
+.weather_time span {
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.weather_gradus {
+    width: 120px;
+    margin: 30px;
+    color: white;
+}
+
+.weather_gradus img {
+    width: 100px;
+    height: 100px;
+}
+
+.weather_gradus i {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.weather_gradus h2 {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.weather_gradus p {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 15px;
+}
+
+.weather_data {
+    width: 650px;
+    height: 490px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background: #222831;
+}
+
+.weather_data .weather_box {
+    width:500px;
+    height: 140px;
+    margin: auto;
+    margin-top: 40px;
+    padding: 15px;
+    border-radius: 10px;
+    /* border: 1px solid red; */
+    box-shadow: 0 0 50px -5px rgba(0, 0, 0);
+}
+
+.weather_data .weather_box i {
+    padding-left: 10px;
+}
+
+.weather_box .box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.weather_box .box p {
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+}
+
+.weather_list {
+    width: 500px;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    background: rgb(14, 11, 45);
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.weather_list .tue {
+    width: 120px;
+    height: 150px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    border: 0.5px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather_list .tue i {
+    font-size: 22px;
+}
+
+.weather_list .tue p {
+    font-size: 20px;
+}
+
+.weather_list .tue #kunlar {
+    margin-bottom: 10px;
+}
+
+.tue:hover {
+    background-color: white;
+    transition: all 0.5s ease;
+    transform: scale(1.1);
+    color: black;
+    font-weight: bold;
+}
+
+.search_area{
+    width: 77%;
+    height: 35px;
+    display: flex;
+    margin: 35px auto;
+    position: relative;
+    overflow-x: hidden;
+    border-radius: 50px;
+}
+
+.search_area form{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    transform: translateX(100%);
+    border-radius: 50px;
+    background: #fff;
+}
+
+.search_area form input{
+    flex: 1;
+    height: 35px;
+    border: none;
+    outline: none;
+    padding: 0 15px;
+    border-radius: 50px;
+
+}
+
+form button{
+    width: 35px;
+    height: 35px;
+    background: linear-gradient(135deg, var(--light) 10%, var(--dark) 100%);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+}
+
+#change_btn{
+    width: 100%;
+    background: linear-gradient(135deg, var(--light) 10%, var(--dark) 100%);
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
