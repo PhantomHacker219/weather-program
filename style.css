@@ -226,3 +226,113 @@ form button{
     font-size: 16px;
     font-weight: 500;
 }
+
+@media (max-width: 500px) {
+    .weather_container {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .weather_time {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .weather_time h2 {
+        font-size: 24px;
+    }
+
+    .weather_time p,
+    .weather_time span {
+        font-size: 16px;
+    }
+
+    .weather_gradus {
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .weather_gradus img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .weather_gradus i {
+        font-size: 40px;
+    }
+
+    .weather_gradus h2 {
+        font-size: 28px;
+    }
+
+    .weather_gradus p {
+        font-size: 18px;
+    }
+
+    .weather_data {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        margin-bottom: 20%;
+    }
+
+    .weather_data .weather_box {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .weather_data .weather_box i {
+        padding-left: 5px;
+    }
+
+    .weather_box .box p {
+        font-size: 18px;
+    }
+
+    .weather_list {
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .weather_list .tue {
+        width: 45%;
+        height: auto;
+        margin: 5px;
+    }
+
+    .weather_list .tue i {
+        font-size: 18px;
+    }
+
+    .weather_list .tue p {
+        font-size: 16px;
+    }
+
+    .search_area {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .search_area form {
+        height: 30px;
+    }
+
+    .search_area form input {
+        height: 30px;
+        padding: 0 10px;
+    }
+
+    form button {
+        width: 30px;
+        height: 30px;
+    }
+
+    #change_btn {
+        font-size: 14px;
+    }
+}
